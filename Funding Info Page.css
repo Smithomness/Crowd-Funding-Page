@@ -1,0 +1,73 @@
+* body {
+  background: pink;
+}
+/*--------- Directory ------------*/
+nav {
+  top: 30px;
+  position: fixed;
+  text-decoration: none;
+}
+.navlinks {
+  font-family:"Castoro Titling";
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #333;  
+}
+.navlinks a {
+  font-family:"Castoro Titling";
+  font-size: 25px;
+  color: white;
+  text-decoration: none; 
+  text-shadow: 2px 2px 2px #333;
+  transition: ease-in-out 0.5s;
+}
+.navlinks a:hover {
+  font-family:"Castoro Titling";
+  font-size: 25px;
+  color: #333;
+  text-decoration: none; 
+  text-shadow: 2px 2px 2px #333;
+  transition: ease-in-out 0.5s;
+}
+/*--------- Heaader ------------*/
+header {
+  position: absolute;
+  left: 35vw;
+  font-size: 75px;
+  color:#333;
+  font-family: "Castro Titling";
+  text-shadow: 2px 2px 2px #333;
+  z-index: 1;
+}
+/*--------- Sub-Heaaders ------------*/
+.subheaders {
+  display: flex;
+  justify-content: center;
+}
+.subheaders {
+  font-size: 45px;
+  font-family: "Castoro Titling";
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #333;
+}
+/*--------- informaation Section ------------*/
+.info {
+  line-height: 1.5;
+  text-align: center;  
+  text-align: justify;
+  font-size: 20px;  
+  width: 600px;
+  margin-left: 380px;
+}    
+/*--------- Faded Background ------------*/
+.fadedborder {
+  position: absolute;
+  top: 120px;
+  margin-left: 200px;
+  width: 1000px;
+  height: 2300px;
+  background: white;
+  border-radius: 3%;
+  opacity: 0.3;
+}

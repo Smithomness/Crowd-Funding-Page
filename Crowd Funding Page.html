@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Castoro Titling' rel='stylesheet'>
+  <link rel="stylesheet" href="CrowdFundingPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<title>She's Gothic Donations</title>
+</head>
+<body>
+<!-------  Header  ------>
+<header>She's Gothic.</header>
+<!------- Direct Contact --------->
+<div class="contact-info">
+    <p class="Email"></p>
+    <p class="Phone"></p>
+</div>
+<!------- Left Links ----->
+<div class="left-links">
+  <nav class="linkz">
+    <a href="#">Go Fund Me</a>
+    <a href="#">Indiegogo</a>
+    <a href="#">Crowd Street</a>
+    <a href="#">Crowd Fundr</a>
+    <a href="#">Angel Investors</a>
+    <a href="#">Cash App</a>
+    <a href="#">Paypal</a>
+  </nav>
+</div>	
+<!------- Right Links ------->
+<div class="right-links">
+  <nav class="linkz">
+    <a href="C:\Users\udewi\Desktop\She's Gothic Official\Funding Info Page\Funding Info Page.html#learnh">Learn About Us</a>
+    <a href="C:\Users\udewi\Desktop\She's Gothic Official\Funding Info Page\Funding Info Page.html#donate">Why Donate?</a>
+    <a href="C:\Users\udewi\Desktop\She's Gothic Official\Funding Info Page\Funding Info Page.html#spend">Spending Plan</a>
+    <a href="C:\Users\udewi\Desktop\She's Gothic Official\Funding Info Page\Funding Info Page.html#updates">Get Updates</a>
+    <a href="C:\Users\udewi\Desktop\She's Gothic Official\Funding Info Page\Funding Info Page.html#contact">Contact</a>
+  </nav>
+</div>
+<!------- Slide Show Background ---------->
+<div class="slideshow-container">     
+  <div class="mySlides fade">
+    <img src="Assets\P Body Model Section.png" style="width:100%; height:100%;">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets\Model Section img 2.png" style="width:100%; height:100%;">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets\Model Section img 3.png" style="width:100%; height:100%;">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets\b SWEATER.png" style="width:100%; height:100%;">
+    <div class="text"></div>
+  </div>
+    
+  <div class="mySlides fade">
+    <img src="Assets\pink sweater.png" style="width:100%; height:100%;">
+    <div class="text"></div>
+  </div>
+    
+  <div class="mySlides fade">
+    <img src="Assets\b hoodyyy.png" style="width:100%; height:100%;">
+    <div class="text"></div>
+  </div>
+</div>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+<!--------------- Slide Show Script ---------------->
+<script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Currently set to change image every 3 seconds
+    }
+</script>
+<!------- Social Nav Bar ------->
+<div class = "social-linkss">
+  <a href = "#">
+      <i class = "fab fa-facebook-f"></i>
+  </a>
+  <a href = "#">
+      <i class = "fab fa-twitter"></i>
+  </a>
+  <a href = "#">
+      <i class = "fab fa-instagram"></i>
+  </a>
+  <a href = "#">
+      <i class = "fab fa-whatsapp"></i>
+  </a>
+  <a href = "#">
+    <i class = "fab fa-pinterest"></i>
+  </a>
+</div>
+<!------------   Bottom Header   ------------>
+<nav class="bottom-nav">
+<h class="bottom-header">Crowd Funding Page</h>
+</div>
+
+
+
+</body>
