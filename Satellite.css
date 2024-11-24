@@ -1,0 +1,43 @@
+body {
+    background-image: url("iss2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
+.head {
+    text-align: center;
+    font-size: 60px;
+    color: gold;
+}
+
+
+.red {
+    font-size: 45px;
+    color: red;
+}
+
+.blue {
+    font-size: 45px;
+    color: blue;
+}
+
+.green {
+    font-size: 45px;
+    color: green;
+}
+
+.gold {
+    font-size: 45px;
+    color: pink;
+}
+
+#issMap {
+    height: 180px;
+
+}
+
+.info {
+    text-align: center;
+}

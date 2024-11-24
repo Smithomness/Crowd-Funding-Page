@@ -1,0 +1,46 @@
+/*----------- background -----------*/
+body {
+  background: linear-gradient(
+    to left,
+    rgba(167, 98, 110, 0.762),
+    rgba(192, 126, 137, 0.667),
+    rgba(180, 120, 130, 0.914),
+    rgba(192, 126, 137, 0.667),
+    rgba(167, 98, 110, 0.762)
+  );
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    font-family: "Castri Titling";
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.back {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+.subheaders {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    font-family: "Castri Titling";
+    font-size: 30px;
+    color: #333;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.description {
+    margin-left: 20%;
+    font-family: "Castri Titling";
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px #333;
+    max-width: 800px;
+}
+
