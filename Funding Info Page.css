@@ -1,21 +1,28 @@
-* body {
-  background: pink;
+*   
+/* background */
+body {
+  background: linear-gradient(
+    to left,
+    rgba(167, 98, 110, 0.762),
+    rgba(192, 126, 137, 0.667),
+    rgba(180, 120, 130, 0.914),
+    rgba(192, 126, 137, 0.667),
+    rgba(167, 98, 110, 0.762)
+  );
 }
-/*--------- Directory ------------*/
+/* Directory */
 nav {
   top: 30px;
   position: fixed;
   text-decoration: none;
 }
 .navlinks {
-  font-family:"Castoro Titling";
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   text-decoration: none;
   text-shadow: 2px 2px 2px #333;  
 }
 .navlinks a {
-  font-family:"Castoro Titling";
   font-size: 25px;
   color: white;
   text-decoration: none; 
@@ -23,24 +30,57 @@ nav {
   transition: ease-in-out 0.5s;
 }
 .navlinks a:hover {
-  font-family:"Castoro Titling";
   font-size: 25px;
   color: #333;
   text-decoration: none; 
   text-shadow: 2px 2px 2px #333;
   transition: ease-in-out 0.5s;
 }
-/*--------- Heaader ------------*/
-header {
-  position: absolute;
-  left: 35vw;
-  font-size: 75px;
-  color:#333;
-  font-family: "Castro Titling";
-  text-shadow: 2px 2px 2px #333;
+/* Social Links */
+.social-linkss {
+  position: fixed;
+  top: 30px;
+  right: 2px;
+  display: flex;
+  align-items: center;
   z-index: 1;
 }
-/*--------- Sub-Heaaders ------------*/
+.social-linkss a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #000;
+  border: 1px solid #000;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.4s ease;
+  z-index: 100;
+}
+.social-linkss a:hover {
+  background: #000;
+  border-color: transparent;
+  color: #fff;
+  z-index: 100;
+}
+/* Heaader */
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom,
+  #ffffff,
+  #333
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family:"Castoro Titling";
+  font-size: 100px;
+  text-shadow: 2px 2px 2px #333;
+}
+/* Sub-Heaaders */
 .subheaders {
   display: flex;
   justify-content: center;
@@ -48,26 +88,110 @@ header {
 .subheaders {
   font-size: 45px;
   font-family: "Castoro Titling";
-  color: #ffffff;
+  color: #333;
   text-shadow: 2px 2px 2px #333;
 }
-/*--------- informaation Section ------------*/
+/* Sub Headers 2 */
+.subheaders-2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Castoro Titling";
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 2px #333;  
+}
+/* informaation Section */
 .info {
+  font-weight: bold;
   line-height: 1.5;
   text-align: center;  
   text-align: justify;
+  font-family: "";
   font-size: 20px;  
   width: 600px;
   margin-left: 380px;
-}    
-/*--------- Faded Background ------------*/
+}
+.source {
+ margin-left: 30%;
+ z-index: 1;
+}
+/* Faded Background */
 .fadedborder {
   position: absolute;
   top: 120px;
-  margin-left: 200px;
-  width: 1000px;
-  height: 2300px;
-  background: white;
-  border-radius: 3%;
-  opacity: 0.3;
+  margin-left: 225px;
+  width: 900px;
+  height: 10000px;
+  background: rgba(255, 255, 255, 0.844);
+  text-shadow: 2px 2px 2px #333;  
+  border: solid #333 7px;
+  border-radius: 5%;
+  opacity: 0.2;
+  z-index: -1;
+}
+/* Gallery */
+.gallery {
+  width: 800px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto; /* Possibly needs edit so hover effect looks correct */
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery div img {
+  width: 100%;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.gallery div img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* Hidden Scroll-Bar No-Jutsu 2 */
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+/* Gallery Wrap */
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+/* Gallery Hover Effects */
+div.gallery {
+  background-color: transparent;
+  transition: 3s;
+}
+div.gallery img {
+  padding: 0px;
+  border: solid;
+  border-width: 3px;
+  color: linear-gradient(lightpink, #a740e2, lightpink);
+  border-radius: 50%;
+}
+div.gallery:hover {
+  background: transparent;
+  opacity: 0.95;
+  transition: 0.4s ease-in-out;
+  color: #fff;
+}
+/* Interesting */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  color: #eb9de4;
+  opacity: 1;
+  transition: 0.5s;
+}
+/* Buttons 1 */
+#backBtn, #nextBtn {
+  width: 25px;
+  cursor: pointer;
+  margin: 40px;
 }
