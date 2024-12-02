@@ -39,8 +39,8 @@ nav {
 /* Social Links */
 .social-linkss {
   position: fixed;
-  top: 30px;
-  right: 2px;
+  top: 5%;
+  left: 2%;
   display: flex;
   align-items: center;
   z-index: 1;
