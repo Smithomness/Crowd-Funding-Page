@@ -41,3 +41,11 @@ body {
 .info {
     text-align: center;
 }
+
+.back {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 25px;
+    font-color: white;
+}
