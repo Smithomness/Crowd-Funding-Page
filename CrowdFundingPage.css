@@ -7,8 +7,8 @@
 }
 /*--------- She's Gothic Header ------------*/
 header {
-  position: absolute;
-  left: 32vw;
+  display: flex;
+  justify-content: center;
   font-size: 75px;
   color: #333;
   text-shadow: 3px 3px 3px #333;
