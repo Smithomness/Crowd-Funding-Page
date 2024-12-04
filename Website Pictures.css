@@ -1,12 +1,19 @@
 * 
 body {
-    background: #333;
+  background: linear-gradient(
+    to left,
+    rgba(167, 98, 110, 0.762),
+    rgba(192, 126, 137, 0.667),
+    rgba(180, 120, 130, 0.914),
+    rgba(192, 126, 137, 0.667),
+    rgba(167, 98, 110, 0.762)
+  );
 }
 header {
-    font-size: 65px;
+    font-size: 75px;
     display: flex;
     justify-content: center;
-    color: white;
+    color: #333;
     margin-bottom: 5%;
 }
 .web-pics {
@@ -15,7 +22,8 @@ header {
     flex-direction: column;
 }
 .subheaders {
-    margin-left: 43%;
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 55px;
     margin-top: 3%;
