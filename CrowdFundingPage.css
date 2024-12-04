@@ -1,6 +1,10 @@
 * body {
   background: #ffffff;
 }
+/* Hidden Scrollbar No-Jutsu */
+::-webkit-scrollbar {
+  display: none;
+}
 /*------- Background ---------*/
 .slideshow-container {
   position: absolute;
