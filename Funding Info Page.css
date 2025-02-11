@@ -101,6 +101,27 @@ header {
   color: white;
   text-shadow: 2px 2px 2px #333;  
 }
+/* Sub Headers 3 */
+.subheaders-3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Castoro Titling";
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 2px #333;  
+  transition: 0.4s ease-in-out;
+}
+
+.subheaders-3:hover {
+  display: flex;
+  justify-content: center;
+  font-family: "Castoro Titling";
+  font-size: 27px;
+  color: white;
+  text-shadow: 2px 2px 2px #333;  
+  transition: 0.4s ease-in-out;
+}
+
 /* informaation Section */
 .info {
   font-weight: bold;
