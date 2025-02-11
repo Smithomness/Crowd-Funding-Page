@@ -1,0 +1,108 @@
+/*----------- background -----------*/
+body {
+  background: linear-gradient(
+    to left,
+    rgba(167, 98, 110, 0.762),
+    rgba(192, 126, 137, 0.667),
+    rgba(180, 120, 130, 0.914),
+    rgba(192, 126, 137, 0.667),
+    rgba(167, 98, 110, 0.762)
+  );
+}
+
+.back {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+
+/* Heaader */
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #333);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Castoro Titling";
+  font-size: 100px;
+  text-shadow: 2px 2px 2px #333;
+}
+
+/* Sub Headers 2 */
+.subheaders-2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Castoro Titling";
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 2px #333;
+}
+
+/* Gallery */
+.gallery {
+  width: 1000px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto; /* Possibly needs edit so hover effect looks correct */
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery div img {
+  width: 100%;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.gallery div img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* Hidden Scroll-Bar No-Jutsu 2 */
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+/* Gallery Wrap */
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+/* Gallery Hover Effects */
+div.gallery {
+  background-color: transparent;
+  transition: 3s;
+}
+div.gallery img {
+  padding: 0px;
+  border: solid;
+  border-width: 3px;
+  color: linear-gradient(lightpink, #a740e2, lightpink);
+  border-radius: 50%;
+}
+div.gallery:hover {
+  background: transparent;
+  opacity: 0.95;
+  transition: 0.4s ease-in-out;
+  color: #fff;
+}
+/* Interesting */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  color: #eb9de4;
+  opacity: 1;
+  transition: 0.5s;
+}
+/* Buttons 1 */
+#backBtn,
+#nextBtn {
+  width: 25px;
+  cursor: pointer;
+  margin: 40px;
+}

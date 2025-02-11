@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="product previews.css">
+	<title>Product Previews</title>
+</head>
+<body>
+	
+<header>Product Previews</header>
+
+<nav class="back">
+	<li><a href="https://shesgothic.com/Funding%20Info%20Page.html#learn">Go Back</a></li>
+</nav>
+
+<!-------- Image Gallery --------->
+<h1 class="subheaders-2">Designs</h1>
+<div class="gallery-wrap">
+    <img src="left.png" id="backBtn">
+    <div class="gallery">
+        <div>
+            <span><img src="p hood.png"></span>
+            <span><img src="b hoodyyy.png"></span>
+            <span><img src="pink sweater.png"></span>
+        </div>
+        <div>
+            <span><img src="p body.png"></span>
+            <span><img src="gothic 2.png"></span>
+            <span><img src="Gothic 5.png"></span>
+        </div>
+        <div>
+            <span><img src="103400 (1).png"></span>
+            <span><img src="103403.png"></span>
+            <span><img src="p bodyyy.png"></span>
+        </div>
+    </div>
+    <img src="right.png" id="nextBtn">
+</div>
+
+<script>
+    // Gallery 1
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    // Gallery 1
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click", ()=>{ 
+        scrollContainer.scrollLeft += 900;
+    });
+
+    backBtn.addEventListener("click", ()=>{
+        scrollContainer.scrollLeft -= 900;
+    });
+</script> 
+
+
+</body>
+</html>
